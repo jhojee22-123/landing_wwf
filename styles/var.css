@@ -12,8 +12,10 @@
     --m-font-size-base:1em;/* 내용 */
     --m-font-size-sm:0.875em;/* 버튼 */
     --m-font-size-lg:1.875em;/* 제목 */
+    --m-font-size-ml:1.375em;/* 보조제목 */
     --t-font-size-base:1;
     --t-font-size-sm:1.25em;
+    --t-font-size-ml:2.188em;
     --t-font-size-lg:2.813em;
     --d-font-size-base:1.25em;
     --d-font-size-sm:1.375em;
@@ -33,6 +35,8 @@
     --icon-lg:24px;
     --icon-l:48px;
     --icon-xl:60px;
+    /* 모서리 */
+    --radius-xs:20px;
 }/* e:root */
 
 /* 공통 디자인 Class */

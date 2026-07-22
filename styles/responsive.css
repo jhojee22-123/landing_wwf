@@ -38,14 +38,44 @@
         padding:8px 13px;
     }
     #wrap .intro .container .btn_g .sponser_qna_btn {
-        padding:5px 10px;
+        padding:5px 10px; border-radius: 20px;
         position:absolute; right:74px; bottom:48px;
     }
+    /* -------------------------------------------2행 퀴즈(태블릿 시작) */
+    #wrap .quiz {
+        padding:60px 40px;
+    }
+    #wrap .quiz .container {
+        display:flex; flex-flow:row nowrap;
+        align-items: center;/* 수직중앙 */
+        justify-content:space-between; /* 수평양끝 */
+        gap:30px;
+    }
+    /* --------------------------------------------2행 2-1 퀴즈 */
+    #wrap .quiz .container #quiz_frm {width:50%}
+    #wrap .quiz .container #quiz_frm > * {margin-bottom:30px;}
+    #wrap .quiz .container #quiz_frm * {}
+    #wrap .quiz .container #quiz_frm h2 {font-size: var(--t-font-size-ml);}
+    #wrap .quiz .container #quiz_frm h3 {font-size:var(--t-font-size-base);}
+    #wrap .quiz .container #quiz_frm .quiz_list {}
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g] {}
+    /* ---------------------------------------input체크상태에 따른 이미지 변경 */
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g]:checked + label {}
+    #wrap .quiz .container #quiz_frm .quiz_list li label {font-size: var(--t-font-size-base);}
+    #wrap .quiz .container #quiz_frm p {}
+    #wrap .quiz .container #quiz_frm p #quiz_btn {font-size:var(--t-font-size-sm);}
+    /* --------------------------------------------2행 2-2 현황 */
+    #wrap .quiz .container .quiz_status {width:50%}
+    #wrap .quiz .container .quiz_status .situation {}
+    #wrap .quiz .container .quiz_status .situation dt {font-size: var(--t-font-size-base);}
+    #wrap .quiz .container .quiz_status .situation dd {font-size:var(--t-font-size-ml);}
+    #wrap .quiz .container .quiz_status .situation dd em {}
+    #wrap .quiz .container .quiz_status .update {}
+    /* -------------------------------------------2행 퀴즈(태블릿 종료) */
 }/* e:min760 */
 /* -------------------------------------------태블릿->데스크탑 */
 @media screen and (min-width:1120px){/* 1120이상일 때  */
-    #wrap {
-    }
+    #wrap {}
     #wrap .intro {}
     #wrap .intro::after {}
     #wrap .intro .container {height:748px; max-width:1120px; margin:var(--spacing-auto);}
@@ -69,4 +99,31 @@
         padding:4px 18px;
         border-radius:30px; right:0;
     }
+    /* -----------------------------------------------2행 퀴즈-데스크탑 시작 */
+    #wrap .quiz {}
+    #wrap .quiz .container {/* 가로너비(고정)+가운데정렬 */
+        width:var(--width-desktop); 
+        margin:var(--spacing-auto);
+    }
+    /* --------------------------------------------2행 2-1 퀴즈 */
+    #wrap .quiz .container #quiz_frm {}
+    #wrap .quiz .container #quiz_frm > * {}
+    #wrap .quiz .container #quiz_frm * {}
+    #wrap .quiz .container #quiz_frm h2 {font-size: var(--d-font-size-lg);}
+    #wrap .quiz .container #quiz_frm h3 {font-size:var(--d-font-size-base);}
+    #wrap .quiz .container #quiz_frm .quiz_list {}
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g] {}
+    /* ---------------------------------------input체크상태에 따른 이미지 변경 */
+    #wrap .quiz .container #quiz_frm .quiz_list li input[name=quiz_g]:checked + label {}
+    #wrap .quiz .container #quiz_frm .quiz_list li label {font-size: var(--d-font-size-base);}
+    #wrap .quiz .container #quiz_frm p {}
+    #wrap .quiz .container #quiz_frm p #quiz_btn {font-size:var(--d-font-size-sm);}
+    /* --------------------------------------------2행 2-2 현황 */
+    #wrap .quiz .container .quiz_status {}
+    #wrap .quiz .container .quiz_status .situation {}
+    #wrap .quiz .container .quiz_status .situation dt {font-size: var(--d-font-size-base);}
+    #wrap .quiz .container .quiz_status .situation dd {font-size:var(--d-font-size-lg);}
+    #wrap .quiz .container .quiz_status .situation dd em {}
+    #wrap .quiz .container .quiz_status .update {}
+    /* -------------------------------------2행 퀴즈-데스크탑 종료 */
 }/* e:min */
