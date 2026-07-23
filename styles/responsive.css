@@ -28,19 +28,6 @@
         /* absolute 해제목적의 변경값 -> static(포지션 기능 해제(위 옵션불가) */
         bottom:0;
     }
-    #wrap .intro .container .btn_g a {
-        padding:0; border-radius:20px;
-    }
-    #wrap .intro .container .btn_g a::after {
-        width:10px; height:16px;
-    }
-    #wrap .intro .container .btn_g .sponser_btn {
-        padding:8px 13px;
-    }
-    #wrap .intro .container .btn_g .sponser_qna_btn {
-        padding:5px 10px; border-radius: 20px;
-        position:absolute; right:74px; bottom:48px;
-    }
     /* -------------------------------------------2행 퀴즈(태블릿 시작) */
     #wrap .quiz {
         padding:60px 40px;
@@ -71,7 +58,19 @@
     #wrap .quiz .container .quiz_status .situation dd {font-size:var(--t-font-size-ml);}
     #wrap .quiz .container .quiz_status .situation dd em {}
     #wrap .quiz .container .quiz_status .update {}
-    /* -------------------------------------------2행 퀴즈(태블릿 종료) */
+    /* ---------------------------------------- 2행 퀴즈(태블릿 종료) */
+    /* ---------------------------------------- 3행 비디오 */
+    #wrap .video_bg {
+    }
+    #wrap .video_bg .container {gap:16px; padding:120px 60px;}
+    #wrap .video_bg .container h1 {
+        font-size: var(--t-font-size-ml);
+    }
+    #wrap .video_bg .container .video {}
+    #wrap .video_bg .container .video iframe {}
+    #wrap .video_bg .container .sponser_btn {
+        font-size:var(--t-font-size-sm);
+    }
 }/* e:min760 */
 /* -------------------------------------------태블릿->데스크탑 */
 @media screen and (min-width:1120px){/* 1120이상일 때  */
@@ -90,15 +89,6 @@
     #wrap .intro .container .btn_g {}
     #wrap .intro .container .btn_g a {}
     #wrap .intro .container .btn_g a::after {}
-    #wrap .intro .container .btn_g .sponser_btn::after {width:8px; height:16px;}
-        #wrap .intro .container .btn_g .sponser_qna_btn::after {width:8px; height:16px;}
-    #wrap .intro .container .btn_g .sponser_btn {
-        padding:8px 13px; border-radius:30px;
-    }
-    #wrap .intro .container .btn_g .sponser_qna_btn {
-        padding:4px 18px;
-        border-radius:30px; right:0;
-    }
     /* -----------------------------------------------2행 퀴즈-데스크탑 시작 */
     #wrap .quiz {}
     #wrap .quiz .container {/* 가로너비(고정)+가운데정렬 */
@@ -126,4 +116,15 @@
     #wrap .quiz .container .quiz_status .situation dd em {}
     #wrap .quiz .container .quiz_status .update {}
     /* -------------------------------------2행 퀴즈-데스크탑 종료 */
+    /* ---------------------------------------- 3행 비디오 */
+    #wrap .video_bg {}
+    #wrap .video_bg .container {}
+    #wrap .video_bg .container h1 {
+        font-size: var(--d-font-size-lg);
+    }
+    #wrap .video_bg .container .video {}
+    #wrap .video_bg .container .video iframe {}
+    #wrap .video_bg .container .sponser_btn {
+        font-size:var(--d-font-size-sm);
+    }
 }/* e:min */

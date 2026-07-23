@@ -25,6 +25,11 @@ answer_popup_bg.style.display = 'none';
 //addEventListener 이벤트를 호출하는 함수
 //addEventListener ('이벤트종류',실행함수);
 quiz_btn.addEventListener('click',popupShow);
+answer_close_btn.addEventListener('click',popupHide);
+
+function popupHide(){
+    answer_popup_bg.style.display = 'none';
+}
 function popupShow(){
-    answer_popup_bg.style.display = 'block';
+    answer_popup_bg.style.display = 'flex';
 }
